@@ -29,7 +29,6 @@ function e($texto) {
         rel="stylesheet"
         crossorigin="anonymous"
     >
-    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -105,11 +104,11 @@ function e($texto) {
                             <?php foreach ($productos as $producto): ?>
                                 <tr>
                                     <td><?= e($producto["id"]) ?></td>
-                                    <td class="fw-semibold"><?= e($producto["nombre"]) ?></td>
+                                    <td class="fw-semibold"><?= e($productos["nombre"]) ?></td>
                                     <td><?= e($producto["precio"]) ?></td>
                                     <td><?= e($producto["stock"]) ?></td>
-                                    <td><?= e($producto["categoria"]) ?></td>
-                                    <td><?= e($producto["fecha_registro"]) ?></td>
+                                    <td><?= e($productos["categoria"]) ?></td>
+                                    <td><?= e($productos["fecha_registro"]) ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
@@ -125,6 +124,5 @@ function e($texto) {
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script src="assets/js/app.js"></script>
 </body>
 </html>
